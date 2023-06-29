@@ -1,0 +1,20 @@
+package app_java_1;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Locale;
+
+public class A{
+	
+	public static void main(String[] args) {
+		LocalDateTime dateTime = LocalDateTime.now();
+        
+        // Create a formatter with the USA date and time format
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy hh:mm a", Locale.US);
+        
+        // Format the date and time using the formatter
+        String usaDateTimeFormat = dateTime.format(formatter);
+        
+        System.out.println("USA Date and Time Format: " + usaDateTimeFormat);
+	}
+}

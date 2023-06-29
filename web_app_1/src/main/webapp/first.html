@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Timer Example</title>
+	<style>
+		body {
+			font-size: 36px;
+			font-weight: bold;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div id="timer">00:00</div>
+
+	<script>
+		// set the amount of time for the timer in seconds
+		var timeLeft = 307;
+
+		// display the initial time on the screen
+		var timerDiv = document.getElementById("timer");
+		timerDiv.innerHTML = formatTime(timeLeft);
+
+		// start the countdown
+		var countdownInterval = setInterval(function() {
+			timeLeft--;
+			timerDiv.innerHTML = formatTime(timeLeft);
+			if (timeLeft <= 0) {
+				clearInterval(countdownInterval);
+				alert("Time's up!");
+			}
+		}, 1000);
+
+		// helper function to format the time as MM:SS
+		function formatTime(seconds) {
+			var minutes = Math.floor(seconds / 60);
+			var remainingSeconds = seconds % 60;
+			return ("00" + minutes).slice(-2) + ":" + ("00" + remainingSeconds).slice(-2);
+		}
+	</script>
+</body>
+</html>

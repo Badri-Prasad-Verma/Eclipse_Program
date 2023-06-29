@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;p1.ArrayListMostRepeatable&apos; to &apos;ArrayListRepeatable&apos;&#x0D;&#x0A;- Original project: &apos;app_java_Collection&apos;&#x0D;&#x0A;- Original element: &apos;p1.ArrayListMostRepeatable&apos;&#x0D;&#x0A;- Renamed element: &apos;p1.ArrayListRepeatable&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ArrayListMostRepeatable&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;p1{ArrayListMostRepeatable.java[ArrayListMostRepeatable" matchStrategy="1" name="ArrayListRepeatable" qualified="false" references="true" similarDeclarations="false" stamp="1687839359486" textual="false" version="1.0"/>
+</session>

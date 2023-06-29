@@ -1,0 +1,30 @@
+package app_java_1;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+
+
+public class ListNode {
+	
+	public static void main(String[] args) {
+		int[] arr1= {12,43,23};
+		int[] arr2= {24,38,93};
+		
+		int[] mergeArray=new int[arr1.length+arr2.length];
+		
+		for (int i = 0; i <=arr1.length; i++) {
+			mergeArray[i]=arr1[i];
+		}
+		for (int i = 0; i <=arr2.length; i++) {
+			mergeArray[i]=arr2[i];
+		}
+		
+		for (int k : mergeArray) {
+			System.out.print(k+" ");
+		}
+		
+	}
+}

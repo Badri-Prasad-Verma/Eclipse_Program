@@ -1,0 +1,35 @@
+package app_java_1;
+
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Scanner;
+import java.util.TreeSet;
+
+public class A {
+	public static void main(String[] args) {
+       Scanner scan=new Scanner(System.in);
+       System.out.println("Enter any number : ");
+       int n=scan.nextInt();
+       
+       if(n%3==0 && n%5==0) {
+    	   int cube = n*n*n;
+    	   System.out.println(n+" the cubes of the number is "+cube);
+       }else if(n%3==0) {
+    	   int square= n*n;
+    	   System.out.println(n+" the square of the number is "+square);
+       }else if(n%5==0) {
+		Double root= Math.sqrt(n);
+		System.out.println(n+" the square of the number is "+root);
+	}
+       
+       
+    }
+}
+
+
+
+
+
+
+
+

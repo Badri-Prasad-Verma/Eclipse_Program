@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Smiley Face</title>
+	<style>
+		.smiley {
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			background-color: yellow;
+			position: relative;
+			overflow: hidden;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			font-size: 36px;
+			font-weight: bold;
+			color: black;
+			text-shadow: 1px 1px 0px white;
+		}
+		.smiley:before, .smiley:after {
+			content: '';
+			position: absolute;
+			background-color: black;
+			border-radius: 50%;
+		}
+		.smiley:before {
+			top: 30%;
+			left: 25%;
+			width: 10%;
+			height: 10%;
+		}
+		.smiley:after {
+			top: 30%;
+			right: 25%;
+			width: 10%;
+			height: 10%;
+		}
+		.smiley .mouth {
+			width: 60%;
+			height: 30%;
+			position: absolute;
+			bottom: 10%;
+			left: 20%;
+			border-radius: 50%;
+			background-color: transparent;
+			border-top: 5px solid black;
+			transform-origin: center top;
+			transform: rotate(0deg);
+			box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.25);
+		}
+		.smiley .mouth.happy {
+			transform: rotate(0deg);
+		}
+		.smiley .mouth.neutral {
+			transform: rotate(0deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="smiley">
+		<div class="mouth happy"></div>
+	</div>
+</body>
+</html>

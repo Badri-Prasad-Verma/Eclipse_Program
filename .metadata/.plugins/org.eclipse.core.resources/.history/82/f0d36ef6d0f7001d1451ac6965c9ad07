@@ -1,0 +1,37 @@
+package app_java_1;
+
+import java.util.ArrayList;
+import java.util.List;
+public class A{
+    
+	public static void main(String[] args) {
+		List<Employee> emp=new ArrayList<>();
+		emp.add(new Employee(1,"badri","bangalore","male","HR",23000));
+		emp.add(new Employee(1,"satish","mumbai","male","TM",30000));
+		emp.add(new Employee(1,"badri","chennai","male","AM",19000));
+		emp.add(new Employee(1,"kajal","mumbai","female","GM",3000));
+		emp.add(new Employee(1,"satish","lucknow","male","TL",43000));
+		emp.add(new Employee(1,"radha","hydrabaad","female","JD",7000));
+		
+		emp.stream().filter(e->e.getName().equals("badri"))
+		.filter(e->e.getSalary()>=20000)
+		.forEach(e->System.out.println(e.getName()+"="+e.getCity()+"="+
+		e.getDepartment()));
+		
+//		emp.stream().filter(e->e.getSalary()>=15000).map(e->e.getName())
+//		.sorted().forEach(System.out::println);
+//		
+//		emp.stream().sorted((x,y)->y.getSalary()-x.getSalary()).limit(2)
+//		.forEach(e->System.out.println(e.getSalary()));
+		
+		emp.stream().sorted((x,y)->x.getName().compareTo(y.getName()))
+		.filter(e->e.getSalary()>=20000)
+		.forEach(e->System.out.println(e.getName()+"="+e.getSalary()));
+		
+//		Map<String, Long> collect = emp.stream()
+//				.collect(Collectors.groupingBy(Employee::getCity,
+//				Collectors.counting()));
+//		System.out.println(collect);
+	}
+}
+

@@ -1,0 +1,13 @@
+package app_java_1;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class D{
+	public static void main(String[] args) {
+       ArrayList<Integer> al=new ArrayList<>();
+       List<Integer> synchronizedList = Collections.synchronizedList(al);
+       System.out.println(synchronizedList);
+        }
+}

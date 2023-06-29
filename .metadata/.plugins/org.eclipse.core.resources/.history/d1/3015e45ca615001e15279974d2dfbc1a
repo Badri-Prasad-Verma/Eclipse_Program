@@ -1,0 +1,8 @@
+package app_java_1;
+
+public class D implements A{
+	
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,28 @@
+package app_java_1;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
+public class ListNode {
+	
+	public static void main(String[] args) {
+		String str="HelloWorld";
+		
+		Map<Character, Integer> map=new HashMap<>();
+		for (char string : str.toCharArray()) {
+			if(Character.isLetter(string)) {
+				 string = Character.toLowerCase(string);
+				 map.put(string, map.getOrDefault(string, 0)+1);
+			}
+		}
+		for (Entry<Character, Integer> string1 : map.entrySet()) {
+			if(string1.getValue()==1) {
+				System.out.println(string1);
+			}
+		}
+	}
+}

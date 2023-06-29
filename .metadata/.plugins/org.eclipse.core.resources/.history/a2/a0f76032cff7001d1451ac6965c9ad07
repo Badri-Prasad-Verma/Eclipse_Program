@@ -1,0 +1,11 @@
+package app_java_1;
+
+import java.util.function.Predicate;
+
+public class B {
+	public static void main(String[] args) {
+		Predicate<Integer> predicate=x->x.equals(20);
+		boolean test = predicate.test(20);
+		System.out.println(test);
+	}
+}

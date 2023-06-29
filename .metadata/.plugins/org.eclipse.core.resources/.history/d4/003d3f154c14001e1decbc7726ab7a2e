@@ -1,0 +1,21 @@
+package app_java_1;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
+public class D{
+	public static void main(String[] args) {
+		String str="badriprasadverma";
+		Entry<Character, Long> orElse = str.chars().mapToObj(c->(char)c).collect(Collectors
+		.groupingBy(Function.identity(),Collectors.counting()))
+		.entrySet().stream().max(Map.Entry.comparingByValue()).orElse(null);
+	
+		if(orElse!=null) {
+			System.out.println("Most Repeated Character : "+orElse.getKey());
+			System.out.println("Count Character : "+orElse.getValue());
+		}
+	}
+}

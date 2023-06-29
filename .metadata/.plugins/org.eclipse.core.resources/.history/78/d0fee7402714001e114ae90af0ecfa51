@@ -1,0 +1,17 @@
+package app_java_1;
+
+public class ListNode {
+	public static void fun1(int a,String b) {
+		System.out.println("Method 1");
+		System.out.println(a);
+		System.out.println(b);
+	}
+	public static void fun1(String a,int b){
+		System.out.println("Method 2");
+		System.out.println(a);
+		System.out.println(b);
+	}
+	public static void main(String[] args) {
+		
+		}
+}

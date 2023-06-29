@@ -1,0 +1,9 @@
+package app_java_1;
+
+public interface D{
+	void test();
+	
+	static void test2() {
+		System.out.println("Static method");
+	}
+}

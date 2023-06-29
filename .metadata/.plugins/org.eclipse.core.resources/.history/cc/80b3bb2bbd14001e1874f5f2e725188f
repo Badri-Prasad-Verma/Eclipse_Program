@@ -1,0 +1,16 @@
+package app_java_1;
+
+import java.util.function.Function;
+
+public class A implements Function<Integer, Integer>{
+	
+	public static void main(String[] args) {
+		A a1=new A();
+		a1.apply(20);
+	}
+
+	@Override
+	public Integer apply(Integer t) {
+		return this.apply(20);
+	}
+}

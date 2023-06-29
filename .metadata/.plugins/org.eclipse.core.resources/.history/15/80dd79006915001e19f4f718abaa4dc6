@@ -1,0 +1,32 @@
+package app_java_1;
+
+import java.util.Scanner;
+
+public class A {
+	public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number (n): ");
+        int n = scanner.nextInt();
+
+        for (int i = 1; i <= n; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                int cube = i * i * i;
+                System.out.println(i + " is divisible by both 3 and 5. Cube: " + cube);
+            } else if (i % 3 == 0) {
+                int square = i * i;
+                System.out.println(i + " is divisible by 3. Square: " + square);
+            } else if (i % 5 == 0) {
+                double root = Math.sqrt(i);
+                System.out.println(i + " is divisible by 5. Square Root: " + root);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+

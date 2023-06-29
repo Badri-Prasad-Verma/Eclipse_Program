@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;SkipFirstAndLastNumber&apos;" deleteContents="true" description="Delete resource &apos;SkipFirstAndLastNumber&apos;" element1="/SkipFirstAndLastNumber" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1687752736927"/>
+</session>
