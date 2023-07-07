@@ -16,7 +16,7 @@ public class PrintPalindrome {
 	private static List<String> findPolindrome(String[] split) {
 		List<String> palindrome=new ArrayList<>();
 		for (String string : split) {
-			if(isPolindrome(string)) {
+			if(!isPolindrome(string)) {
 				palindrome.add(string);
 			}
 		}

@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 public class MostRepetableCharacterStream {
 	public static void main(String[] args) {
 		
-		String str="9076388280";
+		String str="badriprasadverma";
 		Entry<Character, Long> orElse = str.chars().mapToObj(e->(char)e)
 		.collect(Collectors.groupingBy(Function.identity(),Collectors.counting()))
 		.entrySet().stream().max(Map.Entry.comparingByValue())

@@ -15,7 +15,7 @@ public class NumberPalindrome {
 	private static List<Integer> palindromeNumber(List<Integer> asList) {
 		List<Integer> palindrome=new ArrayList<>();
 		for (Integer integer : asList) {
-			if(isPolindrome(integer)) {
+			if(!isPolindrome(integer)) {
 				palindrome.add(integer);
 			}
 		}

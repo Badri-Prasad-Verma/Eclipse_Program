@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class ArrayListRepeatable {
 	public static void main(String[] args) {
-		List<String> asList = Arrays.asList("Badri Prasad Verma");
+		List<String> asList = Arrays.asList("BadriPrasadVerma");
 		HashMap<Character, Integer> hmap=new HashMap<>();
 		asList.forEach(str->str.chars().mapToObj(e->(char)e)
 				.forEach(c->hmap.merge(c, 1, Integer::sum)));
